@@ -9,8 +9,7 @@
 
      <style>
          .thumbnail {
-             width: 300px;
-             display: block;
+             width: 100%;
          }
 
          .channel-profile {
@@ -18,15 +17,16 @@
              border-radius: 50px;
          }
 
-         .channel-picture {
-             display: inline-block;
-             width: 50px;
-             vertical-align: top;
+         .video-grid {
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             column-gap: 15px;
+             row-gap: 40px;
          }
 
-         .video-info {
-             display: inline-block;
-             width: 245px;
+         .video-info-grid {
+             display: grid;
+             grid-template-columns: 50px 1fr;
          }
 
          p {
@@ -57,13 +57,6 @@
              display: block;
          }
 
-         .video-preview {
-             width: 300px;
-             display: inline-block;
-             vertical-align: top;
-             margin-right: 5px;
-         }
-
          .thumbnail-row {
              margin-bottom: 12px;
          }
@@ -72,53 +65,229 @@
     </head>
     <body>
 
-        <input class="search-bar" type="text" placeholder="`Search">
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="youtube-thumbnail/thumbnail-1.jpg">
+        <div class="header">
+            <div class="left-section"></div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="`Search">
             </div>
-
-            <div>
-                <div class="channel-picture">
-                    <img class="channel-profile" src="channel-picture/channel-1.jpeg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Talking Photography and Lighting with Photographer Tomide Akindele!
-                    </p>
-                    <p class="video-author">
-                        Tomide Akindele &#10003
-                    </p>
-       
-                    <p class="video-stats">
-                        3.4M views &#183; 6 months ago
-                    </p>
-                </div>            
-            </div> 
+            <div class="right-section"></div>
         </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="youtube-thumbnail/thumbnail-2.jpg">
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-one.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-one.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Popping Popcorn In Slow Motion!
+                        </p>
+                        <p class="video-author">
+                            Beast Reacts &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            6.4M views &#183; 2 days ago
+                        </p>
+                    </div>            
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-two.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-two.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Meet The Geng
+                        </p>
+                        <p class="video-author">
+                            The Geng &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            504,271 views &#183;  16 days ago
+                        </p>
+                    </div>            
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-three.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-three.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Most Outrageous Laptop Ever Built...
+                        </p>
+                        <p class="video-author">
+                            Unbox Therapy &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            1M views &#183; 6 months ago
+                        </p>
+                    </div>            
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-four.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-four.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Secret, Incredible, and Inspiring Story of Khaby
+                        </p>
+                        <p class="video-author">
+                            Nas Daily &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            1.4M views &#183;  2 days ago
+                        </p>
+                    </div>            
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-five.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-five.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            KADUNA COPPER - Lawyer kunle | Naija Lil Baby
+                        </p>
+                        <p class="video-author">
+                            THECUTE ABIOLA &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            2.2M views &#183; 6 months ago
+                        </p>
+                    </div>            
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-six.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-image-six.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            BADOSKY - THE DRUG DEALER | TAAOOMA ||LASISI ELENU | TOBI BAKRE | ROMEO WJ
+                        </p>
+                        <p class="video-author">
+                            TAAOOMA'S CABIN &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            9.7M views &#183;  2 years ago
+                        </p>
+                    </div>            
+                </div>
             </div>
 
-            <div>
-                <div class="channel-picture">
-                    <img class="channel-profile" src="channel-picture/channel-2.jpeg">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-seven.webp">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        The most rugged SUV built for off road trips
-                    </p>
-                    <p class="video-author">
-                        Tomide Akindele &#10003
-                    </p>
-       
-                    <p class="video-stats">
-                        10.4M views &#183;  2 years ago
-                    </p>
-                </div>            
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-seven.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Kevin Hart & Kourtney Kardashian’s Locker Room Talk
+                        </p>
+                        <p class="video-author">
+                            LOL Network &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            28.4M views &#183;  3 years ago
+                        </p>
+                    </div>            
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-eight.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-eight.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            GUESS THE BLACK PERSON FT KSI
+                        </p>
+                        <p class="video-author">
+                            Beta Squad &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            2.9M views &#183; 14 dayss ago
+                        </p>
+                    </div>            
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="youtube-thumbnail/thumbnail-nine.webp">
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="channel-profile" src="channel-picture/channel-picture-nine.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Marvel Studios' Thor: Love and Thunder | Official Teaser
+                        </p>
+                        <p class="video-author">
+                            Marvel Entertainment &#10003
+                        </p>
+           
+                        <p class="video-stats">
+                            39.9M views &#183;  1 month ago
+                        </p>
+                    </div>            
+                </div>
             </div>
         </div>
 
